@@ -1,0 +1,74 @@
+           <!DOCTYPE html>
+           <html lang="en">
+           <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+              <style>
+               #menu{
+                height: 50px;
+                width: 800px;
+              background-color: rgba(123,134,232,.8);   
+              border: 1px solid black; 
+                border-radius: 4px; 
+               margin: 0px auto;
+
+              }
+              #menu ul{
+              list-style: none;
+               }
+               #menu ul li{
+               height: 40px;
+                  width: 110px;
+               background-color: rgba(123,134,232,.8);
+               /* background-color: red; */
+               text-align: center;
+               line-height: 40px;
+               color: white;
+               float: left;
+              margin-right: 10px;
+               transform: translateY(-12px);
+              }
+              #menu ul ul
+              {
+            margin-left: -40px;
+            margin-top: 9px;
+            /* opacity: 0;  */
+            display: none;  
+            transition: all 1s;     
+              }
+              #menu ul  li:hover ul{
+                display: block;
+              transition: all 1s;
+             }
+              #menu ul ul ul{
+            display: none;
+              }
+           </style>
+           </head> 
+           <body>
+           <div id="menu"> 
+            <ul>
+            <a href="#"><li>Home</li></a> 
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Register</li></a> 
+            <a href="#"><li>Services</li></a>
+            <a href="#"><li>Gallery
+                <ul>
+                    <li>Item1</li>
+                    <li>Item2</li>
+                    <li>Item3</li>  
+                        <ul>
+                          <li>Item.1</li>   
+                          <li>Item.2</li>
+                          <li>Item.3</li>        
+
+                             </ul>
+                            </ul>
+                          </li></a>
+                        <a href="#"><li>Login</li></a>
+
+                        </ul>
+                       </div>
+                        </body>
+                        </html>
